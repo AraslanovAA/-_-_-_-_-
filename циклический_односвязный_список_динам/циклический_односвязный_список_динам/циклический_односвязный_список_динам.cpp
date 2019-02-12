@@ -45,7 +45,7 @@ int IInsert(int MaxNum) {//ввод числа типа int от 1 до MaxNum
 	do {
 		getline(cin, s);
 		int i;
-		if (int i = s.find(' ') != std::string::npos) {
+		if ((int i = s.find(' ')) != std::string::npos) {
 			s.resize(i + 1);
 		}
 		while ((i = s.find(' ')) != std::string::npos)
@@ -86,7 +86,7 @@ double DInsert() {
 
 		getline(cin, s);
 		int i;
-		if (int i = s.find(' ') != std::string::npos) {
+		if ((int i = s.find(' ')) != std::string::npos) {
 			s.resize(i + 1);
 		}
 		while ((i = s.find(' ')) != std::string::npos)
